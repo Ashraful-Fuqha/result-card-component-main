@@ -1,0 +1,165 @@
+@use './color.scss' as *;
+@use 'sass:math';
+
+@font-face{
+    font-family: 'hankengrotesk';
+    src: url(/assets/fonts/hankengrotesk-variablefont_wght-webfont.woff) format('woff'),
+    url(/assets/fonts/hankengrotesk-variablefont_wght-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$hankengrotesk: 'hankengrotesk', 'Hanken Grotesk' , sans-serif;
+$light:500;
+$dark:700;
+$darkish: 800;
+
+html{
+    font-size: 18px;
+    font-family: $hankengrotesk;
+}
+
+.main-sec{
+    padding: 1.2rem 3rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    h1{
+        font-size: .9rem;
+        font-weight: $dark;
+        margin-bottom: 1.2rem;
+    }
+
+    h2{
+        padding: 1.4rem 0;
+        align-self: center;
+        font-size: 2.4rem;
+        font-weight: $darkish;
+        margin-bottom: 1.2rem;
+        min-width: calc(133.4/18)*1rem;
+        min-height: calc(128.6/18)*1rem;
+        border-radius: 50%;
+        span{
+            font-size: .8rem;
+            display: block;
+        }
+    }
+    h3{
+        margin-bottom: .5rem;
+    }
+    p{
+        font-size: .9rem;
+    }
+}
+
+.sub-sec{
+    padding: 1.5rem;
+
+    h3{
+        text-align: left;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        color: $Dark-gray-blue;
+    }
+    
+    section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .7rem;
+        border-radius: calc(12/18)*1rem;
+        margin-bottom: 1rem;
+        h4:nth-child(1){
+            font-weight: $dark;
+            font-size: .9rem;
+            img{
+                margin-bottom: calc(4/18) *-1rem;
+                margin-right: calc(7/18)*1rem;
+            }
+        }
+
+        h4:nth-child(2){
+            color:$Light-lavender;
+            font-size: .9rem;
+            font-weight: $dark;
+            strong{
+                color:$Dark-gray-blue;
+            }
+        }
+    }
+
+    section:nth-of-type(1){
+        background-color: hsla(0,100%,67%,.1);
+        h4:nth-child(1){
+            color:$pale-red
+        }
+    }
+
+    section:nth-of-type(2){
+        background-color: hsla(39, 100%, 56%, 0.1);
+        h4:nth-child(1){
+            color: $Org-Yellow;
+        }
+    }
+
+    section:nth-of-type(3){
+        background-color: hsla(166, 100%, 37%, 0.1);
+        h4:nth-child(1){
+            color: $Green-teal;
+        }
+    }
+
+    section:nth-of-type(4){
+        background-color: hsla(234, 85%, 45%, 0.1);
+        margin-bottom: 1.6rem;
+        h4:nth-child(1){
+            color: $cobalt-blue;
+        }
+    }
+
+    button{
+        width: 100%;
+        font-family: inherit;
+        font-size: .9rem;
+        font-weight: $dark;
+        border:none;
+        background-color: $Dark-gray-blue;
+        color: $White;
+        border-radius: 2rem;
+        padding: .8rem 0;
+    }
+}
+.attribution{
+    font-size: calc(11/18)*1rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px){
+
+    .main-sec{
+        padding: 2rem 3rem;
+        h1{
+            margin-bottom: 1.5rem;
+        }
+
+        h2{
+            margin-bottom: 1.5rem;
+        }
+
+        h3{
+            margin-top: 1rem;
+            margin-bottom: 1.1rem;
+        }
+
+        p{
+            line-height: 1.5;
+        }
+    }
+
+    .sub-sec{
+        padding: 2rem 2rem;
+    }
+
+    footer{
+        display: block;
+    }
+}

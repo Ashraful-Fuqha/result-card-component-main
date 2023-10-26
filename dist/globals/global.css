@@ -1,0 +1,81 @@
+.main-sec {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.main-sec h1, .main-sec p {
+  color: hsl(241, 100%, 89%);
+}
+.main-sec h2 {
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+.main-sec h2 span {
+  color: hsla(241, 100%, 89%, 0.4);
+}
+.main-sec h2, .main-sec h3 {
+  color: hsl(0, 0%, 100%);
+}
+
+.sub-sec section {
+  background: hsl(221, 100%, 96%);
+}
+.sub-sec button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: grab;
+}
+
+.attribution {
+  color: hsl(228, 45%, 44%);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  min-height: 100vh;
+  text-align: center;
+  animation: introLoad 1s forwards;
+}
+main .main-sec {
+  border-radius: 0 0 2rem 2rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes introLoad {
+  0% {
+    transform: translateY(-10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 600px) {
+  main {
+    max-width: 38.8888888889rem;
+    min-height: 24.1666666667rem;
+    width: 80%;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 19.4444444444rem));
+    box-shadow: 5px 4px 15px 2px rgba(0, 0, 0, 0.2);
+  }
+  main .main-sec {
+    border-radius: 0 2rem 2rem 0;
+  }
+}
+/*# sourceMappingURL=global.css.map */

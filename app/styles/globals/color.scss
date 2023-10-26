@@ -1,0 +1,52 @@
+//Primary
+$pale-red:hsl(0,100%,67%);
+$Org-Yellow:hsl(39, 100%, 56%);
+$Green-teal: hsl(166, 100%, 37%);
+$cobalt-blue:hsl(234, 85%, 45%);
+
+//Gradients
+
+$pale-slate-blue-bg:hsl(252, 100%, 67%);
+$pale-royal-blue-bg:hsl(241, 81%, 54%);
+
+$voilet-blue-cir:hsla(256, 72%, 46%, 1);
+$persian-blue-cir:hsla(241, 72%, 46%, 0);
+
+//Neutral
+$White: hsl(0, 0%, 100%);
+$Pale-blue: hsl(221, 100%, 96%);
+$Light-lavender: hsl(241, 100%, 89%);
+$Dark-gray-blue: hsl(224, 30%, 27%);
+
+//main-sec styles
+
+.main-sec{
+    background: linear-gradient($pale-slate-blue-bg,$pale-royal-blue-bg);
+    h1,p{
+        color: $Light-lavender;
+    }
+
+    h2{
+        background: linear-gradient($voilet-blue-cir,$persian-blue-cir);
+        span{
+            color: hsla(241,100%,89%,.4);
+        }
+    }
+    h2,h3{
+        color:$White;
+    }
+}
+
+//sub-sec styles
+
+.sub-sec{
+    section{background: $Pale-blue;}
+    button:hover{
+        background: linear-gradient($pale-slate-blue-bg,$pale-royal-blue-bg);
+        cursor: grab;
+    }
+}
+
+.attribution{
+    color: hsl(228,45%,44%);
+}

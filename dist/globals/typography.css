@@ -1,0 +1,170 @@
+.main-sec {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.main-sec h1, .main-sec p {
+  color: hsl(241, 100%, 89%);
+}
+.main-sec h2 {
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+.main-sec h2 span {
+  color: hsla(241, 100%, 89%, 0.4);
+}
+.main-sec h2, .main-sec h3 {
+  color: hsl(0, 0%, 100%);
+}
+
+.sub-sec section {
+  background: hsl(221, 100%, 96%);
+}
+.sub-sec button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: grab;
+}
+
+.attribution {
+  color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+  font-family: "hankengrotesk";
+  src: url(/assets/fonts/hankengrotesk-variablefont_wght-webfont.woff) format("woff"), url(/assets/fonts/hankengrotesk-variablefont_wght-webfont.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 18px;
+  font-family: "hankengrotesk", "Hanken Grotesk", sans-serif;
+}
+
+.main-sec {
+  padding: 1.2rem 3rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.main-sec h1 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.main-sec h2 {
+  padding: 1.4rem 0;
+  align-self: center;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  min-width: 7.4111111111rem;
+  min-height: 7.1444444444rem;
+  border-radius: 50%;
+}
+.main-sec h2 span {
+  font-size: 0.8rem;
+  display: block;
+}
+.main-sec h3 {
+  margin-bottom: 0.5rem;
+}
+.main-sec p {
+  font-size: 0.9rem;
+}
+
+.sub-sec {
+  padding: 1.5rem;
+}
+.sub-sec h3 {
+  text-align: left;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: hsl(224, 30%, 27%);
+}
+.sub-sec section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem;
+  border-radius: 0.6666666667rem;
+  margin-bottom: 1rem;
+}
+.sub-sec section h4:nth-child(1) {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.sub-sec section h4:nth-child(1) img {
+  margin-bottom: -0.2222222222rem;
+  margin-right: 0.3888888889rem;
+}
+.sub-sec section h4:nth-child(2) {
+  color: hsl(241, 100%, 89%);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.sub-sec section h4:nth-child(2) strong {
+  color: hsl(224, 30%, 27%);
+}
+.sub-sec section:nth-of-type(1) {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.sub-sec section:nth-of-type(1) h4:nth-child(1) {
+  color: hsl(0, 100%, 67%);
+}
+.sub-sec section:nth-of-type(2) {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+.sub-sec section:nth-of-type(2) h4:nth-child(1) {
+  color: hsl(39, 100%, 56%);
+}
+.sub-sec section:nth-of-type(3) {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+.sub-sec section:nth-of-type(3) h4:nth-child(1) {
+  color: hsl(166, 100%, 37%);
+}
+.sub-sec section:nth-of-type(4) {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  margin-bottom: 1.6rem;
+}
+.sub-sec section:nth-of-type(4) h4:nth-child(1) {
+  color: hsl(234, 85%, 45%);
+}
+.sub-sec button {
+  width: 100%;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  padding: 0.8rem 0;
+}
+
+.attribution {
+  font-size: 0.6111111111rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .main-sec {
+    padding: 2rem 3rem;
+  }
+  .main-sec h1 {
+    margin-bottom: 1.5rem;
+  }
+  .main-sec h2 {
+    margin-bottom: 1.5rem;
+  }
+  .main-sec h3 {
+    margin-top: 1rem;
+    margin-bottom: 1.1rem;
+  }
+  .main-sec p {
+    line-height: 1.5;
+  }
+  .sub-sec {
+    padding: 2rem 2rem;
+  }
+  footer {
+    display: block;
+  }
+}
+/*# sourceMappingURL=typography.css.map */

@@ -1,0 +1,28 @@
+.main-sec {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.main-sec h1, .main-sec p {
+  color: hsl(241, 100%, 89%);
+}
+.main-sec h2 {
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+}
+.main-sec h2 span {
+  color: hsla(241, 100%, 89%, 0.4);
+}
+.main-sec h2, .main-sec h3 {
+  color: hsl(0, 0%, 100%);
+}
+
+.sub-sec section {
+  background: hsl(221, 100%, 96%);
+}
+.sub-sec button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: grab;
+}
+
+.attribution {
+  color: hsl(228, 45%, 44%);
+}
+/*# sourceMappingURL=color.css.map */

@@ -1,0 +1,56 @@
+@use './color.scss' as *;
+
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+main{
+    min-height: 100vh;
+    text-align: center;
+    animation: introLoad 1s forwards;
+
+    .main-sec{border-radius: 0 0 2rem 2rem;}
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes introLoad {
+        0%{
+            transform: translateY(-10rem);
+            opacity: 0;
+        }
+
+        100%{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+@media only screen and (min-width: 600px){
+    main{
+        max-width:calc(700/18) *1rem;
+        min-height: calc(435/18)*1rem;
+        width: 80%;
+        border-radius: 2rem;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2,minmax(auto,calc(350/18)*1rem));
+        box-shadow: 5px 4px 15px 2px rgba($color: #000000, $alpha: 0.2);
+
+        .main-sec{
+            border-radius: 0 2rem 2rem 0;
+        }
+    }
+}
